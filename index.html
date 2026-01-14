@@ -101,6 +101,10 @@
     .contact button:hover {
       background-color: #0033a0;
     }
+    .footer {
+      font-size: 0.9em;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -147,7 +151,16 @@
         <p><strong>Solana (SOL):</strong> <a href="https://solscan.io/address/8hMHXf1rPgdquDUxmW9LNkt2DM7nSayhuzzQGXDwY1QS" target="_blank">8hMHXf1rPgdquDUxmW9LNkt2DM7nSayhuzzQGXDwY1QS</a></p>
       </div>
     </div>
+    <!-- Footer with dynamic copyright year -->
+    <div class="footer">
+      <p>&copy; <span id="year"></span> Savetar Cleaning. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script>
+    // JavaScript to update the copyright year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
